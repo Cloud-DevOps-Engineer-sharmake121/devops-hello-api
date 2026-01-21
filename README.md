@@ -1,4 +1,4 @@
-trigger pipeline test
+trigger pipeline test ok
 # DevOps Engineer Portfolio
 Welcome to my professional DevOps portfolio.  
 This organization contains hands-on projects demonstrating my skills in:
