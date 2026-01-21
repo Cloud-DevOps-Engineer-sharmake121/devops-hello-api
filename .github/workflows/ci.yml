@@ -29,3 +29,13 @@ jobs:
     - name: Build Docker image
       run: |
         docker build -t hello-api .
+            - name: Azure Login
+      uses: azure/login@v1
+      with:
+        creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+    - name: Build and Push to ACR
+      run: |
+        az acr login --name ${{ secrets.ACR_LOGIN_SERVER }}
+        docker build -t ${{ secrets.ACR_LOGIN_SERVER }}/hello-api:latest .
+        docker push ${{ secrets.ACR_LOGIN_SERVER }}/hello-api:latest
