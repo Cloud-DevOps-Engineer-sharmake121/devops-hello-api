@@ -1,4 +1,4 @@
-trigger pipeline test ok
+
 # DevOps Engineer Portfolio
 Welcome to my professional DevOps portfolio.  
 This organization contains hands-on projects demonstrating my skills in:
@@ -18,5 +18,4 @@ This organization contains hands-on projects demonstrating my skills in:
 3. k8s-observability-stack — Prometheus + Grafana Monitoring
 4. event-driven-data-pipeline — Kafka/NATS Streaming System
 5. devops-incident-simulation — Incident Response & RCA
-
-6. 
+pipeline test
